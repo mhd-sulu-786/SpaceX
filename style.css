@@ -1,0 +1,207 @@
+@font-face {
+    font-family: D-DIN-Bold;
+    src: url(Resourses/Font/FontsFree-Net-D-DIN-Bold-1.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: D-DIN-Bold;
+    box-sizing: border-box;
+}
+
+
+::selection{
+    color: #000;
+    background: #fff;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header{
+    background: transparent;
+    position: fixed;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.left-header {
+    padding-left: 40px;
+    width: 1400px;
+}
+
+.left-header svg{
+    margin-right: 12px;
+    fill: #fff;
+    width: 210px;
+    height: 26.25px;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, .75)
+}
+
+
+header a{
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+
+.right-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 50px;
+}
+
+
+.right-header nav{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.right-header .drop-button{
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    rotate: 90deg;
+}
+
+
+
+.drop-content{
+    position: absolute;
+    display: none;
+    width: 350px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #000;
+}
+
+.drop-content nav{
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}
+
+.drop-content button{
+    height: 100px;
+    font-size: large;
+    border: 0;
+}
+
+.drop-content a{
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 300;
+    width: 250px;
+    height: 40px;
+    padding: 10px 0;
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.dropdown:hover .drop-content{
+    display: block;
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.section-1 {
+    background-image: url(Resourses/HughesJupitor3.jpg);
+}
+
+.section-2 {
+    background-image: url(Resourses/StarLink.jpg);
+}
+
+.section-3 {
+    background-image: url(Resourses/ESA-Euclid-Mission.jpg);
+}
+
+.section-4 {
+    background-image: url(Resourses/StarShip.jpg);
+}
+
+.text-section {
+    margin-bottom: 20vh;
+    padding-left: 40px;
+    width: 1400px;
+}
+
+.text-section h3{
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-section h2{
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.text-section a{
+    padding: 15px 50px;
+    border: 2px solid #fff;
+    margin: 0;
+}
+
+.text-section a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    margin: 0 20px;
+    font-size: 12px
+}
+
+
+footer span{
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0 20px;
+}
